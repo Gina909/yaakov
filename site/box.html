@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>The Box Model</title>
+            <style>
+                *{      /*the asterisk signifies to the browser to apply this property to EVERY ELEMENT IN THE DOC*/
+                    box-sizing:  border-box; /*  sets the box-sizing property to border-box thus overriding the deafault value of 'content-box' */
+                }
+                body {
+                    background-color: seagreen;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin:  0;
+                    padding:  0;
+                }
+            #box {
+                background-color: #0000ff ;
+                padding:  10px 30px 10px 30px; /*top right bottom left*/
+                border:  10px solid black;
+                margin-top:  50px;
+                width:  300px;
+                height:  100px;
+                overflow:  auto;
+                
+                }
+            #content {
+                background-color: #90EE90; /*green*/
+                           }
+            h1 {
+                margin-bottom: 30px;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <h1>Box Model</h1>
+        
+        <div id="box">
+            <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  adding more text and more text and more text and more text and more text and more text etc etc etcllllllll   hahahahahah   laldlkajflkajdf   Lorem ipsum dolor sit amet, consectetur adipisicing elit.  adding more text and more text and more text and more text and more text and more text etc etc etcllllllll   hahahahahah   laldlkajflkajdf   Lorem ipsum dolor sit amet, consectetur adipisicing elit.  adding more text and more text and more text and more text and more text and more text etc etc etcllllllll   hahahahahah   laldlkajflkajdf </div>
+        </div>
+        
+        
+    </body>
+</html>
+
