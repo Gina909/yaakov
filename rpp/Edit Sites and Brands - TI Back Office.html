@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://backoffice.tire-intelligence.com/rpc/editsites/247 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<base href="/">--><base href=".">
+
+        <title>Edit Sites and Brands - TI Back Office</title>
+
+                    
+            <meta name="Content-Type" content="text/html; charset=UTF-8">
+            
+            <meta name="Content-Language" content="en-US">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" href="http://backoffice.tire-intelligence.com/img/favicon.ico">
+                    <link type="text/css" rel="stylesheet" href="./Edit Sites and Brands - TI Back Office_files/bootstrapCollection.css">
+            <link type="text/css" rel="stylesheet" href="./Edit Sites and Brands - TI Back Office_files/layout.css">
+            
+        
+<link type="text/css" rel="stylesheet" href="./Edit Sites and Brands - TI Back Office_files/jquery.typeahead.css">
+<link type="text/css" rel="stylesheet" href="./Edit Sites and Brands - TI Back Office_files/rpc.editsites.css">
+
+        <style type="text/css">
+            body {
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+        </style>
+    </head>
+
+    <body style="cursor: auto;">
+        <!-- Header -->
+        <div class="navbar">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="http://backoffice.tire-intelligence.com/"> Tire Intelligence - Back Office</a>
+
+            <!-- user dropdown starts -->
+            <div class="btn-group pull-right">
+                                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="http://backoffice.tire-intelligence.com/#">
+                        <i class="icon-user"></i><span class="hidden-phone">
+                            gina.robins@tire-intelligence.com
+                        </span>
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                                                <li><a href="http://backoffice.tire-intelligence.com/auth/logout">Logout</a></li>
+                    </ul>
+
+
+                            </div>
+            <!-- user dropdown ends -->
+        </div>
+    </div>
+</div>
+        <!-- End Header -->
+
+        <!-- Main Container -->
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <!-- left menu starts -->
+                <div class="span2 main-menu-span">
+                    <div class="well nav-collapse sidebar-nav">
+                                                <ul class="nav nav-tabs nav-stacked main-menu">
+    
+                                    <li class="hidden-tablet">
+            
+            <a href="http://backoffice.tire-intelligence.com/">
+                <i class="icon-home"></i>
+                <span class="hidden-tablet">Dashboard</span>
+            </a>
+            
+                                    </li><li class="hidden-tablet">
+            
+            <a href="http://backoffice.tire-intelligence.com/security/acladmin">
+                <i class="icon-lock"></i>
+                <span class="hidden-tablet">ACL Admin</span>
+            </a>
+            
+                                    </li><li class="hidden-tablet">
+            
+            <a href="http://backoffice.tire-intelligence.com/security">
+                <i class="icon-user"></i>
+                <span class="hidden-tablet">Company/User Admin</span>
+            </a>
+            
+                                    </li><li class="">
+            
+            <a href="http://backoffice.tire-intelligence.com/datasource">
+                <i class="icon-globe"></i>
+                <span class="hidden-tablet">Datasources</span>
+            </a>
+            
+                                    </li><li class="">
+            
+            <a href="http://backoffice.tire-intelligence.com/mpm">
+                <i class="icon-th"></i>
+                <span class="hidden-tablet">MPM Management</span>
+            </a>
+            
+                                    </li><li class=" active">
+            
+            <a href="http://backoffice.tire-intelligence.com/rpc">
+                <i class="icon-th"></i>
+                <span class="hidden-tablet">RPC Management</span>
+            </a>
+            
+                                    </li><li class="">
+            
+            <a href="http://backoffice.tire-intelligence.com/automation">
+                <i class="icon-cog"></i>
+                <span class="hidden-tablet">Automation</span>
+            </a>
+            
+                                    </li><li class="">
+            
+            <a href="http://backoffice.tire-intelligence.com/upstrackzones">
+                <i class="icon-th-list"></i>
+                <span class="hidden-tablet">UPS Track Zones</span>
+            </a>
+            
+                                    </li><li class="">
+            
+            <a href="http://backoffice.tire-intelligence.com/utqg">
+                <i class="icon-th-list"></i>
+                <span class="hidden-tablet">UTQG</span>
+            </a>
+            
+                                    </li><li class="">
+            
+            <a href="http://backoffice.tire-intelligence.com/warranty">
+                <i class="icon-time"></i>
+                <span class="hidden-tablet">Warranty</span>
+            </a>
+            
+                                    </li><li class="">
+            
+            <a href="http://backoffice.tire-intelligence.com/siteflex">
+                <i class="icon-th-list"></i>
+                <span class="hidden-tablet">Site Flex</span>
+            </a>
+            
+                                    </li><li class="hidden-tablet">
+            
+            <a href="http://backoffice.tire-intelligence.com/demo">
+                <i class="icon-screenshot"></i>
+                <span class="hidden-tablet">Demo Pages</span>
+            </a>
+            </li></ul>
+                    </div>
+                </div>
+                <!-- left menu ends -->
+
+                <noscript>
+                    &lt;div class="alert alert-block span10"&gt;
+                        &lt;h4 class="alert-heading"&gt;Warning!&lt;/h4&gt;
+                        &lt;p&gt;You need to have
+                            &lt;a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank"&gt;JavaScript&lt;/a&gt;
+                            enabled to use this site.&lt;/p&gt;
+                    &lt;/div&gt;
+                </noscript>
+
+                <!-- content starts -->
+                <div id="content" class="span10">
+
+                    <!-- Breadcrumb -->
+                    <div class="breadcrumb"><a href="http://backoffice.tire-intelligence.com/rpc">RPC Management</a><span class="divider">/</span>Edit Sites and Brands
+                    </div>
+
+                    <!-- Submenu -->
+
+                                        
+
+
+<div class="navbar submenu">
+    <div class="navbar-inner">
+        <ul class="nav">
+                                    <li class="">
+                
+                    <a href="http://backoffice.tire-intelligence.com/rpc">
+                        <i class="icon-white icon-home "></i>
+                        Main</a>
+                </li>
+                                    <li class="">
+                
+                    <a href="http://backoffice.tire-intelligence.com/faq/rpc">
+                        <i class="icon-white icon-comment "></i>
+                        FAQ</a>
+                </li>
+                </ul>
+    </div>
+</div>
+
+
+
+                    <!-- Content -->
+                    
+
+<form action="http://backoffice.tire-intelligence.com/" method="post" name="siteAndBrandForm" id="siteAndBrandForm">
+
+<div class="alert alert-info">
+    <strong>RPC Selections for User: Doug Girvin (247)</strong>
+    <input type="hidden" name="primary_user_id" value="247">
+</div>
+
+<div class="row-fluid">
+    <div class="span3">
+        <!-- Datasource lookup -->
+        <div class="box">
+            <div class="box-header well">
+                <h2><i class="icon-search"></i> Site Lookup</h2>
+            </div>
+            <div class="box-content">
+                <div class="alert alert-info">
+                    You can look up a site (datasource) by:
+                    <ul>
+                        <li>Datasource ID</li>
+                        <li>Datasource Name</li>
+                        <li>Alias Name</li>
+                        <li>Site Code</li>
+                    </ul>
+                </div>
+                <!-- Typeahead -->
+                <label for="datasourceLookup">Search:</label>
+                <div class="typeahead__container">
+                    <div class="typeahead__field">
+                        <span class="typeahead__query">
+                            <span class="typeahead__cancel-button"></span><input type="text" name="datasourceLookup" id="datasourceLookup" class="input-large" autocomplete="off">
+                        </span>
+                        <span class="datasourceTypeaheadLoading hidden"><img src="./Edit Sites and Brands - TI Back Office_files/ajax-loader-1.gif"></span>
+                    </div>
+                </div>
+
+                <div class="btn-group datasourceTypeaheadBtnGroup">
+                    <button class="btn btn-success btn-mini disabled addSiteBtn">
+                        <i class="icon-plus icon-white"></i> Add Site To Report
+                    </button>
+                    <button class="btn btn-mini clearTypeaheadBtn">
+                        <i class="icon-remove-circle"></i> Reset Search
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Selections -->
+        <div class="box">
+            <div class="box-header well">
+                <h2><i class="icon-th-list"></i> Brands</h2>
+            </div>
+            <div class="box-content">
+                <select name="allBrands" data-rel="chosen" id="sel527" style="display: none;" class="chzn-done"><option value="">Select a Brand to Add</option>
+<option value="1">Accelera</option>
+<option value="2">Achilles</option>
+<option value="229">Aderenza</option>
+<option value="3">Admiral</option>
+<option value="453">Advance</option>
+<option value="249">Aeolus</option>
+<option value="4">Allopneus</option>
+<option value="270">Altenzo</option>
+<option value="5">Ambassador</option>
+<option value="316">Amberstone</option>
+<option value="6">America</option>
+<option value="346">Americus</option>
+<option value="7">Amtel</option>
+<option value="314">Annaite</option>
+<option value="394">Annecy</option>
+<option value="273">Antares</option>
+<option value="8">Antyre</option>
+<option value="388">Aoteli</option>
+<option value="274">Aplus</option>
+<option value="9">Apollo</option>
+<option value="450">Aptany</option>
+<option value="11">Arctic Claw</option>
+<option value="10">Arizonian</option>
+<option value="12">Aspen</option>
+<option value="250">Atlas Tire</option>
+<option value="13">Atturo</option>
+<option value="256">Aufine</option>
+<option value="288">Auplus</option>
+<option value="14">Aurora</option>
+<option value="15">Austone</option>
+<option value="275">Autogreen</option>
+<option value="16">Autogrip</option>
+<option value="17">Autoguard</option>
+<option value="251">Avalanche</option>
+<option value="442">Avatyre</option>
+<option value="18">Avon</option>
+<option value="451">Barkley</option>
+<option value="19">Barum</option>
+<option value="20">Bct</option>
+<option value="303">Bearway</option>
+<option value="21">Belshina</option>
+<option value="381">Benchmark</option>
+<option value="454">Benton</option>
+<option value="455">Bestrich</option>
+<option value="22">BFGoodrich</option>
+<option value="23">Big O</option>
+<option value="406">Birla</option>
+<option value="24">Blacklion</option>
+<option value="234">BlackStone</option>
+<option value="25">Bonanza</option>
+<option value="456">Bontyre</option>
+<option value="289">Boto</option>
+<option value="26">Bridgestone</option>
+<option value="27">Camac</option>
+<option value="28">Capitol</option>
+<option value="341">Carbon series</option>
+<option value="412">Carlisle</option>
+<option value="29">Ceat</option>
+<option value="344">Centara</option>
+<option value="30">Centurio</option>
+<option value="299">Chaoyang</option>
+<option value="31">Chengshan</option>
+<option value="435">Cheyen</option>
+<option value="347">Circling</option>
+<option value="33">Clear</option>
+<option value="301">Comforser</option>
+<option value="221">Commodore</option>
+<option value="457">Compasal</option>
+<option value="415">Concours</option>
+<option value="416">Constancy</option>
+<option value="34">Continental</option>
+<option value="35">Contyre</option>
+<option value="36">Cooper</option>
+<option value="37">Cordiant</option>
+<option value="237">Cordovan</option>
+<option value="217">Cornell</option>
+<option value="38">Courier</option>
+<option value="32">CST</option>
+<option value="382">CST</option>
+<option value="349">Cuperis</option>
+<option value="300">Cyt</option>
+<option value="276">Daewoo</option>
+<option value="444">Dailyway</option>
+<option value="458">Davanti</option>
+<option value="39">Dayton</option>
+<option value="421">Dean</option>
+<option value="40">Debica</option>
+<option value="41">Deestone</option>
+<option value="218">Definity</option>
+<option value="42">Delfin</option>
+<option value="43">Delinte</option>
+<option value="325">Delta</option>
+<option value="277">Deruibo</option>
+<option value="44">Dextero</option>
+<option value="45">Diamondback</option>
+<option value="46">Dick Cepek</option>
+<option value="484">DieHard</option>
+<option value="47">Diplomat</option>
+<option value="242">Dmack</option>
+<option value="434">Dominator</option>
+<option value="48">Doral</option>
+<option value="395">Double Coin</option>
+<option value="49">Doublestar</option>
+<option value="248">Douglas</option>
+<option value="423">Duck Commander</option>
+<option value="50">Dunlop</option>
+<option value="290">Duraturn</option>
+<option value="51">Duro</option>
+<option value="52">Durun</option>
+<option value="291">Eastup Tyre</option>
+<option value="53">Effiplus</option>
+<option value="54">Eldorado</option>
+<option value="55">Epic</option>
+<option value="56">Esa+Tecar</option>
+<option value="459">Eternity</option>
+<option value="57">Eurostone</option>
+<option value="58">Eurotec</option>
+<option value="327">Euzkadi</option>
+<option value="59">Event</option>
+<option value="60">Evergreen</option>
+<option value="292">Evermax</option>
+<option value="61">Falken</option>
+<option value="418">Faralong</option>
+<option value="268">Farroad</option>
+<option value="62">Fate</option>
+<option value="63">Federal</option>
+<option value="215">FeuVert</option>
+<option value="64">Fierce</option>
+<option value="65">Firestone</option>
+<option value="66">First Stop</option>
+<option value="67">FirstPrice</option>
+<option value="68">Fisk</option>
+<option value="69">Forceum</option>
+<option value="70">Formula</option>
+<option value="71">Fortuna</option>
+<option value="460">Fortune</option>
+<option value="72">Fulda</option>
+<option value="73">Fullrun</option>
+<option value="74">Fullway</option>
+<option value="216">Futura</option>
+<option value="75">Fuzion</option>
+<option value="387">G-Stone</option>
+<option value="461">Gallant</option>
+<option value="76">General Tire</option>
+<option value="77">Geo-trac</option>
+<option value="78">Geostar</option>
+<option value="233">Gerutti</option>
+<option value="79">Gislaved</option>
+<option value="80">Giti</option>
+<option value="336">Gladiator</option>
+<option value="427">Goform</option>
+<option value="384">Goldway</option>
+<option value="81">Goodride</option>
+<option value="82">Goodyear</option>
+<option value="463">Greentour</option>
+<option value="83">Gremax</option>
+<option value="462">Grenlander</option>
+<option value="409">Gripmax</option>
+<option value="84">GT Radial</option>
+<option value="330">Guardsman</option>
+<option value="293">Habilead</option>
+<option value="401">Habilead</option>
+<option value="85">Haida</option>
+<option value="86">Hankook</option>
+<option value="312">Headway</option>
+<option value="329">Hemisphere</option>
+<option value="87">Hercules</option>
+<option value="88">Hero</option>
+<option value="89">Hifly</option>
+<option value="90">High Performer</option>
+<option value="315">Hilo</option>
+<option value="264">Hoosier</option>
+<option value="91">Hoosier</option>
+<option value="294">Horizon</option>
+<option value="352">Horizon</option>
+<option value="92">HP</option>
+<option value="93">Ihle</option>
+<option value="464">Ilink</option>
+<option value="230">Imperial</option>
+<option value="94">Infinity</option>
+<option value="328">Interco</option>
+<option value="95">Interstate</option>
+<option value="465">Intertrac</option>
+<option value="96">Ironman</option>
+<option value="278">Jaderock</option>
+<option value="228">Jetzon</option>
+<option value="97">Jintong</option>
+<option value="98">Jinyu Tires</option>
+<option value="405">JK Tyres</option>
+<option value="257">Joyroad</option>
+<option value="99">Kama</option>
+<option value="339">Kanati</option>
+<option value="342">Kebek</option>
+<option value="100">Kelly</option>
+<option value="101">Kenda</option>
+<option value="279">Keter</option>
+<option value="102">Kinforest</option>
+<option value="295">kingrun</option>
+<option value="103">Kings Tire</option>
+<option value="104">Kingstar</option>
+<option value="105">Kleber</option>
+<option value="106">Kormoran</option>
+<option value="280">Koryo</option>
+<option value="398">Koryo</option>
+<option value="107">Kumho</option>
+<option value="108">Kyoto</option>
+<option value="345">Lakesea</option>
+<option value="109">Landsail</option>
+<option value="340">Lanvigator</option>
+<option value="226">Laramie</option>
+<option value="110">Lassa</option>
+<option value="420">Laufenn</option>
+<option value="235">Leao</option>
+<option value="111">Lexani</option>
+<option value="350">Liao</option>
+<option value="440">Liberator</option>
+<option value="112">Linglong</option>
+<option value="322">Lionhart</option>
+<option value="437">Longmarch</option>
+<option value="404">Luccini</option>
+<option value="338">Luxotik</option>
+<option value="281">Luxxan</option>
+<option value="113">Mabor</option>
+<option value="114">Maloya</option>
+<option value="115">Marangoni</option>
+<option value="116">Marshal</option>
+<option value="466">Marvemax</option>
+<option value="117">Mastercraft</option>
+<option value="118">Mastersteel</option>
+<option value="385">Mastertrack</option>
+<option value="119">Matador</option>
+<option value="120">Maxtrek</option>
+<option value="121">Maxxis</option>
+<option value="324">Mayrun</option>
+<option value="122">Medalist</option>
+<option value="262">Membat</option>
+<option value="238">Mentor</option>
+<option value="123">Mesa</option>
+<option value="124">Meteor</option>
+<option value="125">Michelin</option>
+<option value="126">Mickey Thompson</option>
+<option value="127">Milestar</option>
+<option value="128">Milestone</option>
+<option value="129">Millennium</option>
+<option value="130">Minerva</option>
+<option value="261">Mirage</option>
+<option value="298">Momo</option>
+<option value="263">Motomaster</option>
+<option value="432">Motrio</option>
+<option value="392">MRF</option>
+<option value="131">Mud Claw</option>
+<option value="224">Multi-Mile</option>
+<option value="132">Multistrada</option>
+<option value="429">Muteki</option>
+<option value="133">Nanco</option>
+<option value="134">Nankang</option>
+<option value="320">National</option>
+<option value="223">Neptune</option>
+<option value="430">Neuton</option>
+<option value="135">Nexen</option>
+<option value="219">Nika</option>
+<option value="136">Nitto</option>
+<option value="467">Noble</option>
+<option value="137">Nokian</option>
+<option value="138">Norauto</option>
+<option value="139">Nordexx</option>
+<option value="140">Nova Tires</option>
+<option value="141">Novex</option>
+<option value="243">Ohtsu</option>
+<option value="468">Opals</option>
+<option value="272">Orium</option>
+<option value="469">Otani</option>
+<option value="142">Ovation</option>
+<option value="143">Pace</option>
+<option value="319">Passage</option>
+<option value="244">Pathfinder</option>
+<option value="144">Pegasus</option>
+<option value="145">Petlas</option>
+<option value="441">Phantom</option>
+<option value="146">Pirelli</option>
+<option value="245">Pit Bull</option>
+<option value="241">Platin</option>
+<option value="147">Pneumant</option>
+<option value="148">Point S</option>
+<option value="260">Premada</option>
+<option value="149">Premiorri</option>
+<option value="431">Presa</option>
+<option value="452">Prestivo</option>
+<option value="150">Primewell</option>
+<option value="470">Prinx</option>
+<option value="246">PRO COMP</option>
+<option value="151">Prodigy</option>
+<option value="411">Prometer</option>
+<option value="220">Provato</option>
+<option value="240">Radar</option>
+<option value="152">Rapid</option>
+<option value="153">Regal</option>
+<option value="154">Reiff</option>
+<option value="343">Rhino</option>
+<option value="155">Ridgon</option>
+<option value="156">Riken</option>
+<option value="247">Road Hugger</option>
+<option value="391">Road Runner</option>
+<option value="471">Roadclaw</option>
+<option value="157">Roadhandler</option>
+<option value="158">Roadhog</option>
+<option value="439">Roadmax</option>
+<option value="159">Roadstone</option>
+<option value="160">Rockstone</option>
+<option value="161">Rosava</option>
+<option value="162">Rotalla</option>
+<option value="163">Rotex</option>
+<option value="449">Routeway</option>
+<option value="265">Rovelo</option>
+<option value="472">Royal Black</option>
+<option value="164">Runway</option>
+<option value="304">Rydanz</option>
+<option value="473">Saferich</option>
+<option value="323">Saffiro</option>
+<option value="239">Sagitar</option>
+<option value="165">Sailun</option>
+<option value="252">Samson</option>
+<option value="166">Satoya</option>
+<option value="167">Sava</option>
+<option value="425">Saxon</option>
+<option value="168">Sebring</option>
+<option value="317">Seiberling</option>
+<option value="169">Semperit</option>
+<option value="438">Sentury</option>
+<option value="351">Shanling</option>
+<option value="445">Siamtyre</option>
+<option value="170">Sigma</option>
+<option value="171">Silverstone</option>
+<option value="433">Sime Tyres</option>
+<option value="172">Simex</option>
+<option value="173">Solus</option>
+<option value="174">Sonar</option>
+<option value="175">Sonny Tyres</option>
+<option value="176">Sportiva</option>
+<option value="474">Sportrak</option>
+<option value="177">Sportstrada</option>
+<option value="178">Star Performer</option>
+<option value="179">Starco</option>
+<option value="180">Starfire</option>
+<option value="181">Starmaxx</option>
+<option value="182">Strata</option>
+<option value="183">Stunner</option>
+<option value="184">Sumitomo</option>
+<option value="332">Summit</option>
+<option value="185">Sumo Firenza</option>
+<option value="186">Sunew</option>
+<option value="397">Sunfulcess</option>
+<option value="282">Sunfull</option>
+<option value="231">Sunitrac</option>
+<option value="187">Sunny</option>
+<option value="232">Suntek</option>
+<option value="475">Sunwide</option>
+<option value="236">Super Swamper</option>
+<option value="408">Supercat</option>
+<option value="389">Superguard</option>
+<option value="443">Superia</option>
+<option value="283">Suretrac</option>
+<option value="419">Sutong</option>
+<option value="188">Syron</option>
+<option value="189">Taganca</option>
+<option value="348">Tamir</option>
+<option value="422">Taurus</option>
+<option value="227">Telstar</option>
+<option value="446">Tempra</option>
+<option value="481">Terramaster</option>
+<option value="313">Three-A</option>
+<option value="334">Thunderer</option>
+<option value="318">Tianfu</option>
+<option value="190">Tigar</option>
+<option value="296">Timberland</option>
+<option value="476">Toledo</option>
+<option value="284">Tornel</option>
+<option value="253">Torque</option>
+<option value="191">Towmax</option>
+<option value="192">Toyo</option>
+<option value="302">Toyomoto</option>
+<option value="193">Tracmax</option>
+<option value="477">Transtone</option>
+<option value="386">Travelstar</option>
+<option value="194">Trayal</option>
+<option value="259">Trazano</option>
+<option value="333">Tri-ace</option>
+<option value="195">Triangle</option>
+<option value="269">Tristar</option>
+<option value="196">Tunga</option>
+<option value="478">TVS</option>
+<option value="197">Tyfoon</option>
+<option value="285">Unicorn</option>
+<option value="410">Unigrip</option>
+<option value="198">Uniroyal</option>
+<option value="297">V-Netik</option>
+<option value="199">Valleystone</option>
+<option value="225">Vanderbilt</option>
+<option value="200">Vee-Rubber</option>
+<option value="428">Veento</option>
+<option value="222">Velozza</option>
+<option value="326">Venezia</option>
+<option value="201">Viatti</option>
+<option value="400">Victorun</option>
+<option value="202">Viking</option>
+<option value="286">Vitour</option>
+<option value="203">Vogue</option>
+<option value="482">Volex</option>
+<option value="335">Vortex</option>
+<option value="204">Vredestein</option>
+<option value="205">Wanli</option>
+<option value="206">Warrior</option>
+<option value="266">Weathermate</option>
+<option value="267">Weathermaxx</option>
+<option value="207">Westlake</option>
+<option value="208">Winda</option>
+<option value="331">Windforce</option>
+<option value="321">Winrun</option>
+<option value="426">Winter Claw</option>
+<option value="479">Wosen</option>
+<option value="209">Yartu</option>
+<option value="210">Yellowsea</option>
+<option value="211">Yokohama</option>
+<option value="390">Yonking</option>
+<option value="287">ZC Rubber</option>
+<option value="212">Zeetex</option>
+<option value="403">Zenises</option>
+<option value="337">Zenna</option>
+<option value="480">Zestino</option>
+<option value="213">Zeta</option>
+<option value="436">Zetro</option>
+<option value="214">Zetum</option></select><div id="sel527_chzn" class="chzn-container chzn-container-single" style="width: 220px;"><a href="javascript:void(0)" class="chzn-single"><span>Select a Brand to Add</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 218px; top: 25px;"><div class="chzn-search"><input type="text" autocomplete="off" style="width: 183px;"></div><ul class="chzn-results"><li id="sel527_chzn_o_0" class="active-result result-selected" style="">Select a Brand to Add</li><li id="sel527_chzn_o_1" class="active-result" style="">Accelera</li><li id="sel527_chzn_o_2" class="active-result" style="">Achilles</li><li id="sel527_chzn_o_3" class="active-result" style="">Aderenza</li><li id="sel527_chzn_o_4" class="active-result" style="">Admiral</li><li id="sel527_chzn_o_5" class="active-result" style="">Advance</li><li id="sel527_chzn_o_6" class="active-result" style="">Aeolus</li><li id="sel527_chzn_o_7" class="active-result" style="">Allopneus</li><li id="sel527_chzn_o_8" class="active-result" style="">Altenzo</li><li id="sel527_chzn_o_9" class="active-result" style="">Ambassador</li><li id="sel527_chzn_o_10" class="active-result" style="">Amberstone</li><li id="sel527_chzn_o_11" class="active-result" style="">America</li><li id="sel527_chzn_o_12" class="active-result" style="">Americus</li><li id="sel527_chzn_o_13" class="active-result" style="">Amtel</li><li id="sel527_chzn_o_14" class="active-result" style="">Annaite</li><li id="sel527_chzn_o_15" class="active-result" style="">Annecy</li><li id="sel527_chzn_o_16" class="active-result" style="">Antares</li><li id="sel527_chzn_o_17" class="active-result" style="">Antyre</li><li id="sel527_chzn_o_18" class="active-result" style="">Aoteli</li><li id="sel527_chzn_o_19" class="active-result" style="">Aplus</li><li id="sel527_chzn_o_20" class="active-result" style="">Apollo</li><li id="sel527_chzn_o_21" class="active-result" style="">Aptany</li><li id="sel527_chzn_o_22" class="active-result" style="">Arctic Claw</li><li id="sel527_chzn_o_23" class="active-result" style="">Arizonian</li><li id="sel527_chzn_o_24" class="active-result" style="">Aspen</li><li id="sel527_chzn_o_25" class="active-result" style="">Atlas Tire</li><li id="sel527_chzn_o_26" class="active-result" style="">Atturo</li><li id="sel527_chzn_o_27" class="active-result" style="">Aufine</li><li id="sel527_chzn_o_28" class="active-result" style="">Auplus</li><li id="sel527_chzn_o_29" class="active-result" style="">Aurora</li><li id="sel527_chzn_o_30" class="active-result" style="">Austone</li><li id="sel527_chzn_o_31" class="active-result" style="">Autogreen</li><li id="sel527_chzn_o_32" class="active-result" style="">Autogrip</li><li id="sel527_chzn_o_33" class="active-result" style="">Autoguard</li><li id="sel527_chzn_o_34" class="active-result" style="">Avalanche</li><li id="sel527_chzn_o_35" class="active-result" style="">Avatyre</li><li id="sel527_chzn_o_36" class="active-result" style="">Avon</li><li id="sel527_chzn_o_37" class="active-result" style="">Barkley</li><li id="sel527_chzn_o_38" class="active-result" style="">Barum</li><li id="sel527_chzn_o_39" class="active-result" style="">Bct</li><li id="sel527_chzn_o_40" class="active-result" style="">Bearway</li><li id="sel527_chzn_o_41" class="active-result" style="">Belshina</li><li id="sel527_chzn_o_42" class="active-result" style="">Benchmark</li><li id="sel527_chzn_o_43" class="active-result" style="">Benton</li><li id="sel527_chzn_o_44" class="active-result" style="">Bestrich</li><li id="sel527_chzn_o_45" class="active-result" style="">BFGoodrich</li><li id="sel527_chzn_o_46" class="active-result" style="">Big O</li><li id="sel527_chzn_o_47" class="active-result" style="">Birla</li><li id="sel527_chzn_o_48" class="active-result" style="">Blacklion</li><li id="sel527_chzn_o_49" class="active-result" style="">BlackStone</li><li id="sel527_chzn_o_50" class="active-result" style="">Bonanza</li><li id="sel527_chzn_o_51" class="active-result" style="">Bontyre</li><li id="sel527_chzn_o_52" class="active-result" style="">Boto</li><li id="sel527_chzn_o_53" class="active-result" style="">Bridgestone</li><li id="sel527_chzn_o_54" class="active-result" style="">Camac</li><li id="sel527_chzn_o_55" class="active-result" style="">Capitol</li><li id="sel527_chzn_o_56" class="active-result" style="">Carbon series</li><li id="sel527_chzn_o_57" class="active-result" style="">Carlisle</li><li id="sel527_chzn_o_58" class="active-result" style="">Ceat</li><li id="sel527_chzn_o_59" class="active-result" style="">Centara</li><li id="sel527_chzn_o_60" class="active-result" style="">Centurio</li><li id="sel527_chzn_o_61" class="active-result" style="">Chaoyang</li><li id="sel527_chzn_o_62" class="active-result" style="">Chengshan</li><li id="sel527_chzn_o_63" class="active-result" style="">Cheyen</li><li id="sel527_chzn_o_64" class="active-result" style="">Circling</li><li id="sel527_chzn_o_65" class="active-result" style="">Clear</li><li id="sel527_chzn_o_66" class="active-result" style="">Comforser</li><li id="sel527_chzn_o_67" class="active-result" style="">Commodore</li><li id="sel527_chzn_o_68" class="active-result" style="">Compasal</li><li id="sel527_chzn_o_69" class="active-result" style="">Concours</li><li id="sel527_chzn_o_70" class="active-result" style="">Constancy</li><li id="sel527_chzn_o_71" class="active-result" style="">Continental</li><li id="sel527_chzn_o_72" class="active-result" style="">Contyre</li><li id="sel527_chzn_o_73" class="active-result" style="">Cooper</li><li id="sel527_chzn_o_74" class="active-result" style="">Cordiant</li><li id="sel527_chzn_o_75" class="active-result" style="">Cordovan</li><li id="sel527_chzn_o_76" class="active-result" style="">Cornell</li><li id="sel527_chzn_o_77" class="active-result" style="">Courier</li><li id="sel527_chzn_o_78" class="active-result" style="">CST</li><li id="sel527_chzn_o_79" class="active-result" style="">CST</li><li id="sel527_chzn_o_80" class="active-result" style="">Cuperis</li><li id="sel527_chzn_o_81" class="active-result" style="">Cyt</li><li id="sel527_chzn_o_82" class="active-result" style="">Daewoo</li><li id="sel527_chzn_o_83" class="active-result" style="">Dailyway</li><li id="sel527_chzn_o_84" class="active-result" style="">Davanti</li><li id="sel527_chzn_o_85" class="active-result" style="">Dayton</li><li id="sel527_chzn_o_86" class="active-result" style="">Dean</li><li id="sel527_chzn_o_87" class="active-result" style="">Debica</li><li id="sel527_chzn_o_88" class="active-result" style="">Deestone</li><li id="sel527_chzn_o_89" class="active-result" style="">Definity</li><li id="sel527_chzn_o_90" class="active-result" style="">Delfin</li><li id="sel527_chzn_o_91" class="active-result" style="">Delinte</li><li id="sel527_chzn_o_92" class="active-result" style="">Delta</li><li id="sel527_chzn_o_93" class="active-result" style="">Deruibo</li><li id="sel527_chzn_o_94" class="active-result" style="">Dextero</li><li id="sel527_chzn_o_95" class="active-result" style="">Diamondback</li><li id="sel527_chzn_o_96" class="active-result" style="">Dick Cepek</li><li id="sel527_chzn_o_97" class="active-result" style="">DieHard</li><li id="sel527_chzn_o_98" class="active-result" style="">Diplomat</li><li id="sel527_chzn_o_99" class="active-result" style="">Dmack</li><li id="sel527_chzn_o_100" class="active-result" style="">Dominator</li><li id="sel527_chzn_o_101" class="active-result" style="">Doral</li><li id="sel527_chzn_o_102" class="active-result" style="">Double Coin</li><li id="sel527_chzn_o_103" class="active-result" style="">Doublestar</li><li id="sel527_chzn_o_104" class="active-result" style="">Douglas</li><li id="sel527_chzn_o_105" class="active-result" style="">Duck Commander</li><li id="sel527_chzn_o_106" class="active-result" style="">Dunlop</li><li id="sel527_chzn_o_107" class="active-result" style="">Duraturn</li><li id="sel527_chzn_o_108" class="active-result" style="">Duro</li><li id="sel527_chzn_o_109" class="active-result" style="">Durun</li><li id="sel527_chzn_o_110" class="active-result" style="">Eastup Tyre</li><li id="sel527_chzn_o_111" class="active-result" style="">Effiplus</li><li id="sel527_chzn_o_112" class="active-result" style="">Eldorado</li><li id="sel527_chzn_o_113" class="active-result" style="">Epic</li><li id="sel527_chzn_o_114" class="active-result" style="">Esa+Tecar</li><li id="sel527_chzn_o_115" class="active-result" style="">Eternity</li><li id="sel527_chzn_o_116" class="active-result" style="">Eurostone</li><li id="sel527_chzn_o_117" class="active-result" style="">Eurotec</li><li id="sel527_chzn_o_118" class="active-result" style="">Euzkadi</li><li id="sel527_chzn_o_119" class="active-result" style="">Event</li><li id="sel527_chzn_o_120" class="active-result" style="">Evergreen</li><li id="sel527_chzn_o_121" class="active-result" style="">Evermax</li><li id="sel527_chzn_o_122" class="active-result" style="">Falken</li><li id="sel527_chzn_o_123" class="active-result" style="">Faralong</li><li id="sel527_chzn_o_124" class="active-result" style="">Farroad</li><li id="sel527_chzn_o_125" class="active-result" style="">Fate</li><li id="sel527_chzn_o_126" class="active-result" style="">Federal</li><li id="sel527_chzn_o_127" class="active-result" style="">FeuVert</li><li id="sel527_chzn_o_128" class="active-result" style="">Fierce</li><li id="sel527_chzn_o_129" class="active-result" style="">Firestone</li><li id="sel527_chzn_o_130" class="active-result" style="">First Stop</li><li id="sel527_chzn_o_131" class="active-result" style="">FirstPrice</li><li id="sel527_chzn_o_132" class="active-result" style="">Fisk</li><li id="sel527_chzn_o_133" class="active-result" style="">Forceum</li><li id="sel527_chzn_o_134" class="active-result" style="">Formula</li><li id="sel527_chzn_o_135" class="active-result" style="">Fortuna</li><li id="sel527_chzn_o_136" class="active-result" style="">Fortune</li><li id="sel527_chzn_o_137" class="active-result" style="">Fulda</li><li id="sel527_chzn_o_138" class="active-result" style="">Fullrun</li><li id="sel527_chzn_o_139" class="active-result" style="">Fullway</li><li id="sel527_chzn_o_140" class="active-result" style="">Futura</li><li id="sel527_chzn_o_141" class="active-result" style="">Fuzion</li><li id="sel527_chzn_o_142" class="active-result" style="">G-Stone</li><li id="sel527_chzn_o_143" class="active-result" style="">Gallant</li><li id="sel527_chzn_o_144" class="active-result" style="">General Tire</li><li id="sel527_chzn_o_145" class="active-result" style="">Geo-trac</li><li id="sel527_chzn_o_146" class="active-result" style="">Geostar</li><li id="sel527_chzn_o_147" class="active-result" style="">Gerutti</li><li id="sel527_chzn_o_148" class="active-result" style="">Gislaved</li><li id="sel527_chzn_o_149" class="active-result" style="">Giti</li><li id="sel527_chzn_o_150" class="active-result" style="">Gladiator</li><li id="sel527_chzn_o_151" class="active-result" style="">Goform</li><li id="sel527_chzn_o_152" class="active-result" style="">Goldway</li><li id="sel527_chzn_o_153" class="active-result" style="">Goodride</li><li id="sel527_chzn_o_154" class="active-result" style="">Goodyear</li><li id="sel527_chzn_o_155" class="active-result" style="">Greentour</li><li id="sel527_chzn_o_156" class="active-result" style="">Gremax</li><li id="sel527_chzn_o_157" class="active-result" style="">Grenlander</li><li id="sel527_chzn_o_158" class="active-result" style="">Gripmax</li><li id="sel527_chzn_o_159" class="active-result" style="">GT Radial</li><li id="sel527_chzn_o_160" class="active-result" style="">Guardsman</li><li id="sel527_chzn_o_161" class="active-result" style="">Habilead</li><li id="sel527_chzn_o_162" class="active-result" style="">Habilead</li><li id="sel527_chzn_o_163" class="active-result" style="">Haida</li><li id="sel527_chzn_o_164" class="active-result" style="">Hankook</li><li id="sel527_chzn_o_165" class="active-result" style="">Headway</li><li id="sel527_chzn_o_166" class="active-result" style="">Hemisphere</li><li id="sel527_chzn_o_167" class="active-result" style="">Hercules</li><li id="sel527_chzn_o_168" class="active-result" style="">Hero</li><li id="sel527_chzn_o_169" class="active-result" style="">Hifly</li><li id="sel527_chzn_o_170" class="active-result" style="">High Performer</li><li id="sel527_chzn_o_171" class="active-result" style="">Hilo</li><li id="sel527_chzn_o_172" class="active-result" style="">Hoosier</li><li id="sel527_chzn_o_173" class="active-result" style="">Hoosier</li><li id="sel527_chzn_o_174" class="active-result" style="">Horizon</li><li id="sel527_chzn_o_175" class="active-result" style="">Horizon</li><li id="sel527_chzn_o_176" class="active-result" style="">HP</li><li id="sel527_chzn_o_177" class="active-result" style="">Ihle</li><li id="sel527_chzn_o_178" class="active-result" style="">Ilink</li><li id="sel527_chzn_o_179" class="active-result" style="">Imperial</li><li id="sel527_chzn_o_180" class="active-result" style="">Infinity</li><li id="sel527_chzn_o_181" class="active-result" style="">Interco</li><li id="sel527_chzn_o_182" class="active-result" style="">Interstate</li><li id="sel527_chzn_o_183" class="active-result" style="">Intertrac</li><li id="sel527_chzn_o_184" class="active-result" style="">Ironman</li><li id="sel527_chzn_o_185" class="active-result" style="">Jaderock</li><li id="sel527_chzn_o_186" class="active-result" style="">Jetzon</li><li id="sel527_chzn_o_187" class="active-result" style="">Jintong</li><li id="sel527_chzn_o_188" class="active-result" style="">Jinyu Tires</li><li id="sel527_chzn_o_189" class="active-result" style="">JK Tyres</li><li id="sel527_chzn_o_190" class="active-result" style="">Joyroad</li><li id="sel527_chzn_o_191" class="active-result" style="">Kama</li><li id="sel527_chzn_o_192" class="active-result" style="">Kanati</li><li id="sel527_chzn_o_193" class="active-result" style="">Kebek</li><li id="sel527_chzn_o_194" class="active-result" style="">Kelly</li><li id="sel527_chzn_o_195" class="active-result" style="">Kenda</li><li id="sel527_chzn_o_196" class="active-result" style="">Keter</li><li id="sel527_chzn_o_197" class="active-result" style="">Kinforest</li><li id="sel527_chzn_o_198" class="active-result" style="">kingrun</li><li id="sel527_chzn_o_199" class="active-result" style="">Kings Tire</li><li id="sel527_chzn_o_200" class="active-result" style="">Kingstar</li><li id="sel527_chzn_o_201" class="active-result" style="">Kleber</li><li id="sel527_chzn_o_202" class="active-result" style="">Kormoran</li><li id="sel527_chzn_o_203" class="active-result" style="">Koryo</li><li id="sel527_chzn_o_204" class="active-result" style="">Koryo</li><li id="sel527_chzn_o_205" class="active-result" style="">Kumho</li><li id="sel527_chzn_o_206" class="active-result" style="">Kyoto</li><li id="sel527_chzn_o_207" class="active-result" style="">Lakesea</li><li id="sel527_chzn_o_208" class="active-result" style="">Landsail</li><li id="sel527_chzn_o_209" class="active-result" style="">Lanvigator</li><li id="sel527_chzn_o_210" class="active-result" style="">Laramie</li><li id="sel527_chzn_o_211" class="active-result" style="">Lassa</li><li id="sel527_chzn_o_212" class="active-result" style="">Laufenn</li><li id="sel527_chzn_o_213" class="active-result" style="">Leao</li><li id="sel527_chzn_o_214" class="active-result" style="">Lexani</li><li id="sel527_chzn_o_215" class="active-result" style="">Liao</li><li id="sel527_chzn_o_216" class="active-result" style="">Liberator</li><li id="sel527_chzn_o_217" class="active-result" style="">Linglong</li><li id="sel527_chzn_o_218" class="active-result" style="">Lionhart</li><li id="sel527_chzn_o_219" class="active-result" style="">Longmarch</li><li id="sel527_chzn_o_220" class="active-result" style="">Luccini</li><li id="sel527_chzn_o_221" class="active-result" style="">Luxotik</li><li id="sel527_chzn_o_222" class="active-result" style="">Luxxan</li><li id="sel527_chzn_o_223" class="active-result" style="">Mabor</li><li id="sel527_chzn_o_224" class="active-result" style="">Maloya</li><li id="sel527_chzn_o_225" class="active-result" style="">Marangoni</li><li id="sel527_chzn_o_226" class="active-result" style="">Marshal</li><li id="sel527_chzn_o_227" class="active-result" style="">Marvemax</li><li id="sel527_chzn_o_228" class="active-result" style="">Mastercraft</li><li id="sel527_chzn_o_229" class="active-result" style="">Mastersteel</li><li id="sel527_chzn_o_230" class="active-result" style="">Mastertrack</li><li id="sel527_chzn_o_231" class="active-result" style="">Matador</li><li id="sel527_chzn_o_232" class="active-result" style="">Maxtrek</li><li id="sel527_chzn_o_233" class="active-result" style="">Maxxis</li><li id="sel527_chzn_o_234" class="active-result" style="">Mayrun</li><li id="sel527_chzn_o_235" class="active-result" style="">Medalist</li><li id="sel527_chzn_o_236" class="active-result" style="">Membat</li><li id="sel527_chzn_o_237" class="active-result" style="">Mentor</li><li id="sel527_chzn_o_238" class="active-result" style="">Mesa</li><li id="sel527_chzn_o_239" class="active-result" style="">Meteor</li><li id="sel527_chzn_o_240" class="active-result" style="">Michelin</li><li id="sel527_chzn_o_241" class="active-result" style="">Mickey Thompson</li><li id="sel527_chzn_o_242" class="active-result" style="">Milestar</li><li id="sel527_chzn_o_243" class="active-result" style="">Milestone</li><li id="sel527_chzn_o_244" class="active-result" style="">Millennium</li><li id="sel527_chzn_o_245" class="active-result" style="">Minerva</li><li id="sel527_chzn_o_246" class="active-result" style="">Mirage</li><li id="sel527_chzn_o_247" class="active-result" style="">Momo</li><li id="sel527_chzn_o_248" class="active-result" style="">Motomaster</li><li id="sel527_chzn_o_249" class="active-result" style="">Motrio</li><li id="sel527_chzn_o_250" class="active-result" style="">MRF</li><li id="sel527_chzn_o_251" class="active-result" style="">Mud Claw</li><li id="sel527_chzn_o_252" class="active-result" style="">Multi-Mile</li><li id="sel527_chzn_o_253" class="active-result" style="">Multistrada</li><li id="sel527_chzn_o_254" class="active-result" style="">Muteki</li><li id="sel527_chzn_o_255" class="active-result" style="">Nanco</li><li id="sel527_chzn_o_256" class="active-result" style="">Nankang</li><li id="sel527_chzn_o_257" class="active-result" style="">National</li><li id="sel527_chzn_o_258" class="active-result" style="">Neptune</li><li id="sel527_chzn_o_259" class="active-result" style="">Neuton</li><li id="sel527_chzn_o_260" class="active-result" style="">Nexen</li><li id="sel527_chzn_o_261" class="active-result" style="">Nika</li><li id="sel527_chzn_o_262" class="active-result" style="">Nitto</li><li id="sel527_chzn_o_263" class="active-result" style="">Noble</li><li id="sel527_chzn_o_264" class="active-result" style="">Nokian</li><li id="sel527_chzn_o_265" class="active-result" style="">Norauto</li><li id="sel527_chzn_o_266" class="active-result" style="">Nordexx</li><li id="sel527_chzn_o_267" class="active-result" style="">Nova Tires</li><li id="sel527_chzn_o_268" class="active-result" style="">Novex</li><li id="sel527_chzn_o_269" class="active-result" style="">Ohtsu</li><li id="sel527_chzn_o_270" class="active-result" style="">Opals</li><li id="sel527_chzn_o_271" class="active-result" style="">Orium</li><li id="sel527_chzn_o_272" class="active-result" style="">Otani</li><li id="sel527_chzn_o_273" class="active-result" style="">Ovation</li><li id="sel527_chzn_o_274" class="active-result" style="">Pace</li><li id="sel527_chzn_o_275" class="active-result" style="">Passage</li><li id="sel527_chzn_o_276" class="active-result" style="">Pathfinder</li><li id="sel527_chzn_o_277" class="active-result" style="">Pegasus</li><li id="sel527_chzn_o_278" class="active-result" style="">Petlas</li><li id="sel527_chzn_o_279" class="active-result" style="">Phantom</li><li id="sel527_chzn_o_280" class="active-result" style="">Pirelli</li><li id="sel527_chzn_o_281" class="active-result" style="">Pit Bull</li><li id="sel527_chzn_o_282" class="active-result" style="">Platin</li><li id="sel527_chzn_o_283" class="active-result" style="">Pneumant</li><li id="sel527_chzn_o_284" class="active-result" style="">Point S</li><li id="sel527_chzn_o_285" class="active-result" style="">Premada</li><li id="sel527_chzn_o_286" class="active-result" style="">Premiorri</li><li id="sel527_chzn_o_287" class="active-result" style="">Presa</li><li id="sel527_chzn_o_288" class="active-result" style="">Prestivo</li><li id="sel527_chzn_o_289" class="active-result" style="">Primewell</li><li id="sel527_chzn_o_290" class="active-result" style="">Prinx</li><li id="sel527_chzn_o_291" class="active-result" style="">PRO COMP</li><li id="sel527_chzn_o_292" class="active-result" style="">Prodigy</li><li id="sel527_chzn_o_293" class="active-result" style="">Prometer</li><li id="sel527_chzn_o_294" class="active-result" style="">Provato</li><li id="sel527_chzn_o_295" class="active-result" style="">Radar</li><li id="sel527_chzn_o_296" class="active-result" style="">Rapid</li><li id="sel527_chzn_o_297" class="active-result" style="">Regal</li><li id="sel527_chzn_o_298" class="active-result" style="">Reiff</li><li id="sel527_chzn_o_299" class="active-result" style="">Rhino</li><li id="sel527_chzn_o_300" class="active-result" style="">Ridgon</li><li id="sel527_chzn_o_301" class="active-result" style="">Riken</li><li id="sel527_chzn_o_302" class="active-result" style="">Road Hugger</li><li id="sel527_chzn_o_303" class="active-result" style="">Road Runner</li><li id="sel527_chzn_o_304" class="active-result" style="">Roadclaw</li><li id="sel527_chzn_o_305" class="active-result" style="">Roadhandler</li><li id="sel527_chzn_o_306" class="active-result" style="">Roadhog</li><li id="sel527_chzn_o_307" class="active-result" style="">Roadmax</li><li id="sel527_chzn_o_308" class="active-result" style="">Roadstone</li><li id="sel527_chzn_o_309" class="active-result" style="">Rockstone</li><li id="sel527_chzn_o_310" class="active-result" style="">Rosava</li><li id="sel527_chzn_o_311" class="active-result" style="">Rotalla</li><li id="sel527_chzn_o_312" class="active-result" style="">Rotex</li><li id="sel527_chzn_o_313" class="active-result" style="">Routeway</li><li id="sel527_chzn_o_314" class="active-result" style="">Rovelo</li><li id="sel527_chzn_o_315" class="active-result" style="">Royal Black</li><li id="sel527_chzn_o_316" class="active-result" style="">Runway</li><li id="sel527_chzn_o_317" class="active-result" style="">Rydanz</li><li id="sel527_chzn_o_318" class="active-result" style="">Saferich</li><li id="sel527_chzn_o_319" class="active-result" style="">Saffiro</li><li id="sel527_chzn_o_320" class="active-result" style="">Sagitar</li><li id="sel527_chzn_o_321" class="active-result" style="">Sailun</li><li id="sel527_chzn_o_322" class="active-result" style="">Samson</li><li id="sel527_chzn_o_323" class="active-result" style="">Satoya</li><li id="sel527_chzn_o_324" class="active-result" style="">Sava</li><li id="sel527_chzn_o_325" class="active-result" style="">Saxon</li><li id="sel527_chzn_o_326" class="active-result" style="">Sebring</li><li id="sel527_chzn_o_327" class="active-result" style="">Seiberling</li><li id="sel527_chzn_o_328" class="active-result" style="">Semperit</li><li id="sel527_chzn_o_329" class="active-result" style="">Sentury</li><li id="sel527_chzn_o_330" class="active-result" style="">Shanling</li><li id="sel527_chzn_o_331" class="active-result" style="">Siamtyre</li><li id="sel527_chzn_o_332" class="active-result" style="">Sigma</li><li id="sel527_chzn_o_333" class="active-result" style="">Silverstone</li><li id="sel527_chzn_o_334" class="active-result" style="">Sime Tyres</li><li id="sel527_chzn_o_335" class="active-result" style="">Simex</li><li id="sel527_chzn_o_336" class="active-result" style="">Solus</li><li id="sel527_chzn_o_337" class="active-result" style="">Sonar</li><li id="sel527_chzn_o_338" class="active-result" style="">Sonny Tyres</li><li id="sel527_chzn_o_339" class="active-result" style="">Sportiva</li><li id="sel527_chzn_o_340" class="active-result" style="">Sportrak</li><li id="sel527_chzn_o_341" class="active-result" style="">Sportstrada</li><li id="sel527_chzn_o_342" class="active-result" style="">Star Performer</li><li id="sel527_chzn_o_343" class="active-result" style="">Starco</li><li id="sel527_chzn_o_344" class="active-result" style="">Starfire</li><li id="sel527_chzn_o_345" class="active-result" style="">Starmaxx</li><li id="sel527_chzn_o_346" class="active-result" style="">Strata</li><li id="sel527_chzn_o_347" class="active-result" style="">Stunner</li><li id="sel527_chzn_o_348" class="active-result" style="">Sumitomo</li><li id="sel527_chzn_o_349" class="active-result" style="">Summit</li><li id="sel527_chzn_o_350" class="active-result" style="">Sumo Firenza</li><li id="sel527_chzn_o_351" class="active-result" style="">Sunew</li><li id="sel527_chzn_o_352" class="active-result" style="">Sunfulcess</li><li id="sel527_chzn_o_353" class="active-result" style="">Sunfull</li><li id="sel527_chzn_o_354" class="active-result" style="">Sunitrac</li><li id="sel527_chzn_o_355" class="active-result" style="">Sunny</li><li id="sel527_chzn_o_356" class="active-result" style="">Suntek</li><li id="sel527_chzn_o_357" class="active-result" style="">Sunwide</li><li id="sel527_chzn_o_358" class="active-result" style="">Super Swamper</li><li id="sel527_chzn_o_359" class="active-result" style="">Supercat</li><li id="sel527_chzn_o_360" class="active-result" style="">Superguard</li><li id="sel527_chzn_o_361" class="active-result" style="">Superia</li><li id="sel527_chzn_o_362" class="active-result" style="">Suretrac</li><li id="sel527_chzn_o_363" class="active-result" style="">Sutong</li><li id="sel527_chzn_o_364" class="active-result" style="">Syron</li><li id="sel527_chzn_o_365" class="active-result" style="">Taganca</li><li id="sel527_chzn_o_366" class="active-result" style="">Tamir</li><li id="sel527_chzn_o_367" class="active-result" style="">Taurus</li><li id="sel527_chzn_o_368" class="active-result" style="">Telstar</li><li id="sel527_chzn_o_369" class="active-result" style="">Tempra</li><li id="sel527_chzn_o_370" class="active-result" style="">Terramaster</li><li id="sel527_chzn_o_371" class="active-result" style="">Three-A</li><li id="sel527_chzn_o_372" class="active-result" style="">Thunderer</li><li id="sel527_chzn_o_373" class="active-result" style="">Tianfu</li><li id="sel527_chzn_o_374" class="active-result" style="">Tigar</li><li id="sel527_chzn_o_375" class="active-result" style="">Timberland</li><li id="sel527_chzn_o_376" class="active-result" style="">Toledo</li><li id="sel527_chzn_o_377" class="active-result" style="">Tornel</li><li id="sel527_chzn_o_378" class="active-result" style="">Torque</li><li id="sel527_chzn_o_379" class="active-result" style="">Towmax</li><li id="sel527_chzn_o_380" class="active-result" style="">Toyo</li><li id="sel527_chzn_o_381" class="active-result" style="">Toyomoto</li><li id="sel527_chzn_o_382" class="active-result" style="">Tracmax</li><li id="sel527_chzn_o_383" class="active-result" style="">Transtone</li><li id="sel527_chzn_o_384" class="active-result" style="">Travelstar</li><li id="sel527_chzn_o_385" class="active-result" style="">Trayal</li><li id="sel527_chzn_o_386" class="active-result" style="">Trazano</li><li id="sel527_chzn_o_387" class="active-result" style="">Tri-ace</li><li id="sel527_chzn_o_388" class="active-result" style="">Triangle</li><li id="sel527_chzn_o_389" class="active-result" style="">Tristar</li><li id="sel527_chzn_o_390" class="active-result" style="">Tunga</li><li id="sel527_chzn_o_391" class="active-result" style="">TVS</li><li id="sel527_chzn_o_392" class="active-result" style="">Tyfoon</li><li id="sel527_chzn_o_393" class="active-result" style="">Unicorn</li><li id="sel527_chzn_o_394" class="active-result" style="">Unigrip</li><li id="sel527_chzn_o_395" class="active-result" style="">Uniroyal</li><li id="sel527_chzn_o_396" class="active-result" style="">V-Netik</li><li id="sel527_chzn_o_397" class="active-result" style="">Valleystone</li><li id="sel527_chzn_o_398" class="active-result" style="">Vanderbilt</li><li id="sel527_chzn_o_399" class="active-result" style="">Vee-Rubber</li><li id="sel527_chzn_o_400" class="active-result" style="">Veento</li><li id="sel527_chzn_o_401" class="active-result" style="">Velozza</li><li id="sel527_chzn_o_402" class="active-result" style="">Venezia</li><li id="sel527_chzn_o_403" class="active-result" style="">Viatti</li><li id="sel527_chzn_o_404" class="active-result" style="">Victorun</li><li id="sel527_chzn_o_405" class="active-result" style="">Viking</li><li id="sel527_chzn_o_406" class="active-result" style="">Vitour</li><li id="sel527_chzn_o_407" class="active-result" style="">Vogue</li><li id="sel527_chzn_o_408" class="active-result" style="">Volex</li><li id="sel527_chzn_o_409" class="active-result" style="">Vortex</li><li id="sel527_chzn_o_410" class="active-result" style="">Vredestein</li><li id="sel527_chzn_o_411" class="active-result" style="">Wanli</li><li id="sel527_chzn_o_412" class="active-result" style="">Warrior</li><li id="sel527_chzn_o_413" class="active-result" style="">Weathermate</li><li id="sel527_chzn_o_414" class="active-result" style="">Weathermaxx</li><li id="sel527_chzn_o_415" class="active-result" style="">Westlake</li><li id="sel527_chzn_o_416" class="active-result" style="">Winda</li><li id="sel527_chzn_o_417" class="active-result" style="">Windforce</li><li id="sel527_chzn_o_418" class="active-result" style="">Winrun</li><li id="sel527_chzn_o_419" class="active-result" style="">Winter Claw</li><li id="sel527_chzn_o_420" class="active-result" style="">Wosen</li><li id="sel527_chzn_o_421" class="active-result" style="">Yartu</li><li id="sel527_chzn_o_422" class="active-result" style="">Yellowsea</li><li id="sel527_chzn_o_423" class="active-result" style="">Yokohama</li><li id="sel527_chzn_o_424" class="active-result" style="">Yonking</li><li id="sel527_chzn_o_425" class="active-result" style="">ZC Rubber</li><li id="sel527_chzn_o_426" class="active-result" style="">Zeetex</li><li id="sel527_chzn_o_427" class="active-result" style="">Zenises</li><li id="sel527_chzn_o_428" class="active-result" style="">Zenna</li><li id="sel527_chzn_o_429" class="active-result" style="">Zestino</li><li id="sel527_chzn_o_430" class="active-result" style="">Zeta</li><li id="sel527_chzn_o_431" class="active-result" style="">Zetro</li><li id="sel527_chzn_o_432" class="active-result" style="">Zetum</li></ul></div></div>
+                <button name="addBrandBtn" class="btn btn-mini btn-success float-r">+ Add</button>
+
+                <div class="btn-group brandBtnGroup">
+                    <button class="btn btn-success btn-mini" name="selectAllBrands">
+                        <i class="icon-asterisk icon-white"></i> Select All Brands
+                    </button>
+                    <button class="btn btn-mini" name="clearAllBrands">
+                        <i class="icon-remove-circle"></i> Clear All Brands
+                    </button>
+                </div>
+                <!-- Selected Brands -->
+                                <div class="label">Brand Selections: <span id="brandCount">1</span></div>
+                <div class="alert alert-warning noBrandsDiv" style="display:none;">
+                   <i class="icon-warning-sign"></i> <strong>No brands have been selected for this user.</strong>
+               </div>
+                <div class="selectedBrands">
+                                                                    <div data-brand-id="0" class="btn-group">
+                            <input type="hidden" name="primaryUser[userBrands][0][id]" value="27310">
+                            <input type="hidden" name="primaryUser[userBrands][0][userId]" value="247">
+                            <input type="hidden" name="primaryUser[userBrands][0][brandId]" value="0">
+                            <button class="btn btn-mini dummyBrandBtn">
+                                                                                                    All Brands (0)
+                                                            </button>
+                            <button class="btn btn-mini removeBrandBtn"><i class="icon-remove"></i></button>
+                        </div>
+                                    </div>
+
+                <!-- Template DIV - Used when adding a new brand list -->
+                <div class="hidden brand_template_div">
+                    <div class="btn-group" data-brand-id="">
+                        <button class="btn btn-mini dummyBrandBtn"></button>
+                        <button class="btn btn-mini removeBrandBtn"><i class="icon-remove"></i></button>
+                    </div>
+                </div>
+                <!-- Template for Form elements generated by ZF2 Form Collection -->
+                <div id="zf2BrandTemplate">
+                <span data-template="&lt;fieldset&gt;&lt;input type=&quot;hidden&quot; name=&quot;primaryUser[userBrands][__index__][id]&quot; value=&quot;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;primaryUser[userBrands][__index__][userId]&quot; value=&quot;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;primaryUser[userBrands][__index__][brandId]&quot; value=&quot;&quot;&gt;&lt;/fieldset&gt;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="span9">
+        <div class="box">
+            <div class="box-header well">
+                <h2><i class="icon-th-list"></i> Sites</h2>
+            </div>
+            <div class="box-content">
+                <div class="alert alert-warning noSitesDiv" style="display:none;">
+                    <i class="icon-warning-sign"></i> <strong>No sites have been selected for this user.</strong>
+                </div>
+                <!-- Site Table -->
+                <table id="siteMappingSortable">
+                    <thead>
+                        <tr>
+                            <th class="siteMappingColumn">Mapping</th>
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>Site Code</th>
+                            <th class="premiumColumn">Premium</th>
+                            <th>TyreBase Status</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ui-sortable">
+                                                
+                                                                                                        
+                                                                                                        <tr data-datasource-id="2" class="" style="">
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][0][datasourceId]" class="input-mini" value="2">
+                                <i class="icon-resize-vertical"></i>
+                                <span class="siteMappingValue">1</span>
+                                <input type="hidden" name="primaryUser[userSites][0][retailPriceMapping]" value="1">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-large disabled" value="Tire Rack">
+                            </td>
+                            <td>
+                                                                                                                                    <input type="text" disabled="disabled" class="input-medium disabled" value="National">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="tack">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][0][premium]" value="0"><div class="iPhoneCheckContainer" style="width: 97px;"><input type="checkbox" name="primaryUser[userSites][0][premium]" class="iphone-toggle" data-no-uniform="true" value="1"><label class="iPhoneCheckLabelOff" style="width: 92px;">
+  <span>NO</span>
+</label><label class="iPhoneCheckLabelOn" style="width: 0px;">
+  <span style="margin-left: -50px;">YES</span>
+</label><div class="iPhoneCheckHandle" style="width: 41px;">
+  <div class="iPhoneCheckHandleRight">
+    <div class="iPhoneCheckHandleCenter"></div>
+  </div>
+</div></div>
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="prod">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][0][userId]" value="247">
+                                <button class="btn btn-mini btn-danger removeSiteBtn"><i class="icon-remove icon-white"></i> Remove</button>
+                            </td>
+                        </tr><tr data-datasource-id="1">
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][1][datasourceId]" class="input-mini" value="1">
+                                <i class="icon-resize-vertical"></i>
+                                <span class="siteMappingValue">2</span>
+                                <input type="hidden" name="primaryUser[userSites][1][retailPriceMapping]" value="2">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-large disabled" value="Discount Tire Co (Direct/Internet)">
+                            </td>
+                            <td>
+                                                                                                                                    <input type="text" disabled="disabled" class="input-medium disabled" value="National">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="dtidi">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][1][premium]" value="0"><div class="iPhoneCheckContainer" style="width: 97px;"><input type="checkbox" name="primaryUser[userSites][1][premium]" class="iphone-toggle" data-no-uniform="true" value="1"><label class="iPhoneCheckLabelOff" style="width: 92px;">
+  <span>NO</span>
+</label><label class="iPhoneCheckLabelOn" style="width: 0px;">
+  <span style="margin-left: -50px;">YES</span>
+</label><div class="iPhoneCheckHandle" style="width: 41px;">
+  <div class="iPhoneCheckHandleRight">
+    <div class="iPhoneCheckHandleCenter"></div>
+  </div>
+</div></div>
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="prod">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][1][userId]" value="247">
+                                <button class="btn btn-mini btn-danger removeSiteBtn"><i class="icon-remove icon-white"></i> Remove</button>
+                            </td>
+                        </tr>
+                                                                                                        <tr data-datasource-id="4">
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][2][datasourceId]" class="input-mini" value="4">
+                                <i class="icon-resize-vertical"></i>
+                                <span class="siteMappingValue">3</span>
+                                <input type="hidden" name="primaryUser[userSites][2][retailPriceMapping]" value="3">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-large disabled" value="TireBuyer">
+                            </td>
+                            <td>
+                                                                                                                                    <input type="text" disabled="disabled" class="input-medium disabled" value="National">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="tibuy">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][2][premium]" value="0"><div class="iPhoneCheckContainer" style="width: 97px;"><input type="checkbox" name="primaryUser[userSites][2][premium]" class="iphone-toggle" data-no-uniform="true" value="1"><label class="iPhoneCheckLabelOff" style="width: 92px;">
+  <span>NO</span>
+</label><label class="iPhoneCheckLabelOn" style="width: 0px;">
+  <span style="margin-left: -50px;">YES</span>
+</label><div class="iPhoneCheckHandle" style="width: 41px;">
+  <div class="iPhoneCheckHandleRight">
+    <div class="iPhoneCheckHandleCenter"></div>
+  </div>
+</div></div>
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="prod">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][2][userId]" value="247">
+                                <button class="btn btn-mini btn-danger removeSiteBtn"><i class="icon-remove icon-white"></i> Remove</button>
+                            </td>
+                        </tr>
+                                                                                                        <tr data-datasource-id="103">
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][3][datasourceId]" class="input-mini" value="103">
+                                <i class="icon-resize-vertical"></i>
+                                <span class="siteMappingValue">4</span>
+                                <input type="hidden" name="primaryUser[userSites][3][retailPriceMapping]" value="4">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-large disabled" value="Town Fair">
+                            </td>
+                            <td>
+                                                                                                                                    <input type="text" disabled="disabled" class="input-medium disabled" value="National">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="toweh">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][3][premium]" value="0"><div class="iPhoneCheckContainer" style="width: 97px;"><input type="checkbox" name="primaryUser[userSites][3][premium]" class="iphone-toggle" data-no-uniform="true" value="1"><label class="iPhoneCheckLabelOff" style="width: 92px;">
+  <span>NO</span>
+</label><label class="iPhoneCheckLabelOn" style="width: 0px;">
+  <span style="margin-left: -50px;">YES</span>
+</label><div class="iPhoneCheckHandle" style="width: 41px;">
+  <div class="iPhoneCheckHandleRight">
+    <div class="iPhoneCheckHandleCenter"></div>
+  </div>
+</div></div>
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" value="prod">
+                            </td>
+                            <td>
+                                <input type="hidden" name="primaryUser[userSites][3][userId]" value="247">
+                                <button class="btn btn-mini btn-danger removeSiteBtn"><i class="icon-remove icon-white"></i> Remove</button>
+                            </td>
+                        </tr>
+                                            </tbody>
+                </table>
+
+                <!-- Template Row - Used when adding a new datasource to site list -->
+                <table class="hidden template_table">
+                    <tbody>
+                        <tr data-datasource-id="">
+                            <td>
+                                <input name="datasourceId">
+                                <i class="icon-resize-vertical"></i>
+                                <span class="siteMappingValue"></span>
+                                <input name="retailPriceMapping">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-large disabled" name="datasourceName">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-medium disabled" name="datasourceLocation">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" name="datasourceSiteCode">
+                            </td>
+                            <td>
+                                <input name="premium">
+                            </td>
+                            <td>
+                                <input type="text" disabled="disabled" class="input-mini disabled" name="datasourceTyreBaseStatus">
+                            </td>
+                            <td>
+                                <input name="userId">
+                                <button class="btn btn-mini btn-danger removeSiteBtn"><i class="icon-remove icon-white"></i> Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Template for Form elements generated by ZF2 Form Collection -->
+                <div id="zf2SiteTemplate">
+                <span data-template="&lt;fieldset&gt;&lt;input type=&quot;hidden&quot; name=&quot;primaryUser[userSites][__index__][userId]&quot; value=&quot;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;primaryUser[userSites][__index__][retailPriceMapping]&quot; value=&quot;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;primaryUser[userSites][__index__][datasourceId]&quot; class=&quot;input-mini&quot; value=&quot;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;primaryUser[userSites][__index__][premium]&quot; value=&quot;0&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;primaryUser[userSites][__index__][premium]&quot; class=&quot;iphone-toggle&quot; data-no-uniform=&quot;true&quot; value=&quot;1&quot;&gt;&lt;/fieldset&gt;"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="well well-small formBtnWell">
+    <input type="submit" name="edit_sites_submit" class="btn btn-primary" value="Save Changes">
+                    <a href="http://backoffice.tire-intelligence.com/rpc/manage/1?gid=13" class="btn">Cancel</a>
+</div>
+
+</form>
+
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <hr>
+
+<footer>
+    <p class="pull-left">Copyright © 2012 - 2018 Tire Intelligence. All rights reserved.</p>
+    <p class="pull-right">
+        v2.24.0.1
+        <br>
+        ProdApp01
+    </p>
+</footer>            <!-- End Footer -->
+
+        </div>
+
+        <!-- Flash Messages to pass to noty -->
+        <div id="flashMessageContainer">
+        
+        
+                </div>
+
+                    <script type="text/javascript" src="./Edit Sites and Brands - TI Back Office_files/jqueryCollection.js"></script>
+            <script type="text/javascript" src="./Edit Sites and Brands - TI Back Office_files/bootstrap.min.js"></script>
+            <script type="text/javascript" src="./Edit Sites and Brands - TI Back Office_files/layout.js"></script>
+            
+            
+        
+<script type="text/javascript" src="./Edit Sites and Brands - TI Back Office_files/jquery.typeahead.min.js"></script>
+<script type="text/javascript" src="./Edit Sites and Brands - TI Back Office_files/rpc.editsites.js"></script>
+    
+</body></html>

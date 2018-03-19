@@ -1,0 +1,94 @@
+/*
+    Created on : Dec 27, 2013, 4:08:25 PM
+    Author     : Chris Chandler <chris.chandler@tire-intelligence.com>
+*/
+
+#siteMappingSortable thead th
+{
+    padding: 5px;
+}
+#siteMappingSortable thead
+{
+    background-color: #EEE;
+    border:1px solid #999;
+}
+#siteMappingSortable tbody tr td
+{
+    min-height: 24px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #CCC;
+}
+#scrollable-dropdown-menu .dropdown-menu {
+    max-height: 150px;
+    overflow-y: auto;
+}
+.siteMappingColumn
+{
+    width: 60px;
+}
+#siteMappingSortable tbody tr td:first-child
+{
+    cursor: move;
+}
+.premiumColumn {
+    width: 100px;
+}
+.siteMappingValue
+{
+    font-size: 18px;
+    font-weight: bold;
+    width: 26px;
+    text-align:right;
+    display: inline-block;
+}
+input[type="text"]
+{
+    margin-bottom: 0;
+}
+.datasourceTypeaheadBtnGroup, .formBtnWell
+{
+    margin-top: 20px;
+}
+.brandBtnGroup {
+    margin: 5px 0 25px 0;
+}
+.selectedBrands div.btn-group {
+    display: inline-block; margin: 3px;
+}
+.selectedBrands {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.typeahead__list, .typeahead__dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: auto;
+}
+
+.typeahead__list li a {
+    position: relative;
+}
+
+.typeahead__list > li {
+    border-top: none;
+    margin-right: 5px;
+}
+
+.typeahead__list > li > a:hover,
+.typeahead__list > li > a:focus,
+.typeahead__list > li.active > a,
+.typeahead__dropdown > li > a:hover,
+.typeahead__dropdown > li > a:focus,
+.typeahead__dropdown > li.active > a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    padding: 6px 10px;
+}
+
+button[name="addBrandBtn"] {
+    display: none;
+    margin-top: -17px;
+}

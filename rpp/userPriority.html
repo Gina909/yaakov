@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://tiservices.tire-intelligence.com/rppapp/userPriority.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!--<base href="/">--><!--<base href=".">--><base href=".">
+    <!-- Meta tags -->
+    <meta http-equiv="Content-Language" content="en-US">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./userPriority_files/jquery-ui.css">
+    <link rel="stylesheet" href="./userPriority_files/userPriority.css">
+
+
+    <style>
+        #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+        #sortable li span { position: absolute; margin-left: -1.3em; }
+    </style>
+    <script src="./userPriority_files/jquery.min.js"></script>
+    <script src="./userPriority_files/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sortable').sortable();
+            $('#save').click(function () {
+                var order = $("ul#sortable").sortable( "toArray" );
+                var off = [];
+                $.each(order, function( i, val ) {
+                    var offset = $( "#offset-" + val ).val();
+                    off.push(offset);
+
+
+                    // Will stop running after "three"
+
+                });
+
+                $.ajax({
+                    method: "POST",
+                    url: "ajax/savePriority.php",
+                    dataType: 'json',
+                    data: {
+                        order: order,
+                        offset: off
+                    },
+                    success: function (result) {
+                        console.log(result);
+                    }
+
+                });
+                console.log(off);
+                console.log(order);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1> Drag and drop to reorder your competitors.  Enter an offset and click save.</h1>
+
+<ul id="sortable" class="ui-sortable">
+    <li class="ui-state-default ui-sortable-handle" id="757"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>pepboys.com Bridgewater 08807 -- Offset: <input type="text" class="offset" id="offset-757" value="10"></li><li class="ui-state-default ui-sortable-handle" id="707"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>firestonecompleteautocare.com Bridgewater 08807 -- Offset: <input type="text" class="offset" id="offset-707" value="13"></li><li class="ui-state-default ui-sortable-handle" id="1217"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>costco.com Long Island, NY 11747 -- Offset: <input type="text" class="offset" id="offset-1217" value="17"></li><li class="ui-state-default ui-sortable-handle" id="713"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>mrtire.com Bridgewater 08807 -- Offset: <input type="text" class="offset" id="offset-713" value="18"></li><li class="ui-state-default ui-sortable-handle" id="756"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>tires.bjs.com Westbury 11590 -- Offset: <input type="text" class="offset" id="offset-756" value="19"></li></ul>
+<button class="btn btn-success" id="save">Save</button>
+
+
+</body></html>
